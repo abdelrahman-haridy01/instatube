@@ -1,4 +1,4 @@
-**Instatube** is a videos app powered by [youtube API's](https://developers.google.com/youtube/v3/docs/) and [AngularJS][angularjs].
+**Instatube** is a videos app powered by [youtube API's](https://developers.google.com/youtube/v3/docs/) and [AngularJS](https://github.com/johnpapa/angular-styleguide/blob/master/a1/README.md).
 
 Author: Abdelrahman Haridy ([AbharWork](http://abharwork.com))
 
@@ -10,7 +10,6 @@ Author: Abdelrahman Haridy ([AbharWork](http://abharwork.com))
 
 2. Install dependencies  via [npm](https://www.npmjs.com/) :
     1. `npm install`
-
 
 2. Install dependencies  via [npm](https://www.npmjs.com/) :
     1. `npm install`
@@ -52,7 +51,7 @@ e2e-tests/            --> end-to-end tests
 ```
 ## Running the App during Development
 
-The `Instatube` project comes preconfigured with a local development web server. It is a Node.js tool called [http-server][http-server] and gulp automaition tool [gulp][https://gulpjs.com/] . You can start this web server with `gulp`
+The `Instatube` project comes preconfigured with a local development web server. It is a Node.js tool called [http-server][http-server] and gulp automaition tool [gulp](https://gulpjs.com/) . You can start this web server with `gulp`
 
 ```
 gulp
