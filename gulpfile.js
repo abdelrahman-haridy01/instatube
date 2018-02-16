@@ -68,6 +68,7 @@ gulp.task('sass', ['lint:sass'], function() {
     .pipe(browserSync.reload({
       stream: true
     }))
+    .pipe(gulp.dest('dist/css'))
 });
 
 // useref build
