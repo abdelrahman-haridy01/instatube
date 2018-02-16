@@ -1,0 +1,65 @@
+<div ng-controller="appController">
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="#!/main">
+                    <img src="img/logo-lg.png" alt="instatube logo">
+                </a>
+            </div>
+            <div class="search">
+                <form ng-submit="search()">
+                    <input type="text" placeholder="search..." id="query" name="query" ng-focus="focused()">
+                    <button type="submit" id="search-button">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </form>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+    <!-- // Navbar -->
+</div>
+<!-- Channel -->
+<div class="channel" ng-controller="channelCtrl">
+    <div class="container">
+        <div class="head">
+            <div class="cover-img">
+                <img ng-src="{{ channel.snippet.thumbnails.medium.url }}" alt="{{ channel.snippet.channelTitle }}">
+            </div>
+            <div class="title">
+                <img ng-src="{{ channel.snippet.thumbnails.medium.url }}" alt="{{ channel.snippet.channelTitle }}">
+                <div class="info">
+                    <h1>{{ channel.snippet.channelTitle }}</h1>
+                    <p>
+                        <a href="#">
+                            <i class="fa fa-play"></i> subscribe</a> 23.555</p>
+                </div>
+            </div>
+        </div>
+        <div class="videos-list">
+            <!-- Default video layout -->
+            <div class="default-video" ng-repeat="item in videosChannel">
+                <div class="screen">
+                    <a href="#!/single/{{ item.id.videoId }}" class="thumb-img">
+                        <img ng-src="{{ item.snippet.thumbnails.medium.url }}" alt="{{ item.snippet.title }}">
+                    </a>
+                    <span>12:00</span>
+                </div>
+                <div class="info">
+                    <h4>
+                        <a href="#!/single/{{ item.id.videoId }}">{{ item.snippet.title }}</a>
+                    </h4>
+                    <p class="details">
+                        <a href="#!/channel/{{ item.snippet.channelId }}">{{ item.snippet.channelTitle }} </a> .
+                        <span>published At: {{ item.snippet.publishedAt | date : format : longDate }}</span>
+                    </p>
+                    <p class="description">{{ item.snippet.description }}</p>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <!-- //Default video layout -->
+        </div>
+    </div>
+</div>
+<!-- //Channel -->
