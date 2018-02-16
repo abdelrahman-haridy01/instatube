@@ -51,7 +51,7 @@ e2e-tests/            --> end-to-end tests
 ```
 ## Running the App during Development
 
-The `Instatube` project comes preconfigured with a local development web server. It is a Node.js tool called [http-server][http-server] and gulp automaition tool [gulp](https://gulpjs.com/) . You can start this web server with `gulp`
+The `Instatube` project comes preconfigured with a local development web server. It is a Node.js tool called [http-server](https://github.com/indexzero/http-server) and gulp automaition tool [gulp](https://gulpjs.com/) . You can start this web server with `gulp`
 
 ```
 gulp
