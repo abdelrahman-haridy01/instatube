@@ -424,6 +424,9 @@ body {
     .container {
         width: 750px;
     }
+    .navbar .search input {
+        width: 390px;
+    }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
