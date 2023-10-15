@@ -24,7 +24,8 @@
         "gulp-imagemin": "^3.2.0",
         "gulp-sass": "^3.1.0",
         "gulp-uglify": "^3.0.0",
-        "gulp-useref": "^3.1.2"
+        "gulp-useref": "^3.1.2",
+        "cryptiles": ">=4.1.2"
     },
     "dependencies": {
         "browser-sync": "^2.18.12",
@@ -33,7 +34,8 @@
         "eslint-plugin-jsx-a11y": "^5.0.3",
         "eslint-plugin-react": "^7.0.1",
         "run-sequence": "^1.2.2",
-        "stylelint-config-standard": "^16.0.0"
+        "stylelint-config-standard": "^16.0.0",
+        "cryptiles": ">=4.1.2"
     },
     "scripts": {
         "postinstall": "bower install",
